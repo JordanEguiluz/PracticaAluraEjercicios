@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Logica parte 3</title>
+</head>
+<body>
+    <canvas style=" margin:5px, 0; "  width="650" height="400">
+
+    </canvas>
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+
+    
+        pincel.fillStyle= "green" //esta es una propiedad
+        pincel.fillRect(200,50,350,300);//esta es una funcion
+        //ojo izq
+        pincel.fillStyle= "black" //esta es una propiedad
+        pincel.fillRect(250,110,90,90);//esta es una funcion
+        //ojo der
+        pincel.fillStyle= "black" //esta es una propiedad
+        pincel.fillRect(410,110,90,90);//esta es una funcion
+        //nariz
+        pincel.fillStyle= "black" //esta es una propiedad
+        pincel.fillRect(340,200,70,100);//esta es una funcion
+        //boca izq
+        pincel.fillStyle= "black" //esta es una propiedad
+        pincel.fillRect(300,240,40,110);//esta es una funcion
+        //boca der
+        pincel.fillStyle= "black" //esta es una propiedad
+        pincel.fillRect(410,240,40,110);//esta es una funcion
+    
+        
+
+    </script>
+</body>
+</html>

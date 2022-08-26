@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Usando Promp</title>
+</head>
+<body>
+    <script>
+           function  saltarLinea () {
+        document.write("<br><br>");
+    }
+
+    function imprimir (input){
+        document.write(input);
+        saltarLinea();
+    }
+    
+    function calcularImc(peso,altura, nombre){
+        imc = peso / (altura*altura)// puedes usar altura como remplazo 
+        return Math.round(imc);
+    }
+    IngresarNombre = prompt("Ingrese su Nombre");
+    IngresarPeso = prompt(IngresarNombre + " ingrese su Peso");
+    IngresarAltura = prompt(IngresarNombre + " ingrese su altura");
+
+    imcCalculado = calcularImc(IngresarPeso,IngresarAltura);
+
+    imprimir(IngresarNombre + ", Su IMC calculado es de: " + imcCalculado)
+
+
+    if (imcCalculado < 18.5){
+        imprimir(IngresarNombre + ", Su IMC indica que esta bajo de lo normal")
+        
+    }
+    else if(imcCalculado >= 18.5 && imcCalculado <= 24.9){
+        imprimir(IngresarNombre + ", Su IMC indica que esta dentro del rango normal")
+
+    }
+    else if(imcCalculado >=25 && imcCalculado <=29.9){
+        imprimir(IngresarNombre +", Su IMC indica que esta con sobrepeso")
+    }
+    else if (imcCalculado >30){
+        imprimir(IngresarNombre + ", Su IMC indica que esta obeso necesita ir al gimnacio ")
+    }
+    </script>
+
+
+</body>
+</html>

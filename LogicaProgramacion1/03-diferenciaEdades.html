@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Usando Promp</title>
+</head>
+<body>
+    <script>
+           function  saltarLinea () {
+        document.write("<br><br>");
+    }
+
+    function imprimir (input){
+        document.write(input);
+        saltarLinea();
+    }
+    function calcularDiferencia (edad1,nombre1,edad2,nombre2){
+        var diferencia = edad1-edad2;
+    
+        imprimir("la diferencia es: "+ nombre1 + " y " + nombre2 + " es " + diferencia);
+
+    }
+    calcularDiferencia(33,"mario",26,"maria");
+    </script>

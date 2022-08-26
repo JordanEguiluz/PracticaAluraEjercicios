@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> Juego de azar</title>
+</head>
+<body>
+    <script>
+        function  saltarLinea () {
+        document.write("<br><br>");
+    }
+
+    function imprimir (input){
+        document.write(input);
+        saltarLinea();
+    }
+    var numeroPensado = Math.round(Math.random()*10);// calculamos numeros ramdon
+    var intento = 3;
+    var contador = 1    ;
+
+    while (contador <= intento){ 
+        var numeroLanzado = parseInt(prompt("Ingrese numero entre 0 y 10"));
+
+        if(numeroPensado == numeroLanzado){
+            alert("Felicidades acertaste, en el intento " + contador + " el numero pensado era: " + numeroPensado);
+            imprimir("Ganaste ");
+            break;
+        }
+        else
+        {
+            alert("Fallaste al acertar el numero");
+        }
+
+        contador++
+    }
+
+    
+    if(numeroPensado == numeroLanzado){
+            imprimir("Felicidades acertaste, en el intento " + contador + " el numero pensado era: " + numeroPensado);
+        }
+        else
+        {
+            imprimir("Usted erro, el numero pensado era " + numeroPensado );
+        }
+        
+    </script>
+</body>

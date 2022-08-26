@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <div class="navegador">
+    <h1><img src="./img/logo.png" alt="imagen no disponible"></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+    </div>
+
+</header>
+<main>
+   <form action="">
+    <label for="nombreyapellido">nombre y apellido</label>
+    <input type="text" id="nombreyapellido" class="input-padron" required>
+
+    <label for="correo">Correo Electronico</label>
+    <input type="email" id="correo" class="input-padron"
+     placeholder="ejemplo@dominio.com" required>
+
+    <label for="telefono">Telefono</label>
+    <input type="tel" id="telefono" class="input-padron" 
+    placeholder="952123654" required>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron"
+    placeholder="Ingrese un mensaje" required></textarea>
+
+    <fieldset>
+        <legend class="test" id="test">Como le gustaria que le contactemos? </legend>
+
+        <label for="radio-email">
+        <input type="radio" name="contacto" id="radio-email" value="email">Email</label>
+        
+    
+        <label for="radio-telefono">
+        <input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono</label>
+        
+    
+        <label for="radio-whatsapp">
+        <input type="radio" name="contacto" id="radio-whatsapp" value="whatsapp" checked>Whatsapp</label>
+        
+    </fieldset>
+    <fieldset>
+        <legend>En cual horario prefiere ser atendido</legend>
+        <select name="" id="">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+        </select>
+
+    </fieldset>
+   
+   
+    <label for="" class="checkbox">
+    <input type="checkbox" checked>Le gustaria recibir novedades de la barberia</label>
+
+    <input type="submit" class="enviar" value="Enviar Formulario" name="" id="">
+
+   </form>
+
+   <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horario</th>
+    
+            </tr>
+        </thead>
+      <tbody>
+        <tr>
+            <td>Lunes</td>
+            <td>08h - 20h</td>
+
+        </tr>
+        <tr>
+            <td>Miercoles</td>
+            <td>08h - 20h</td>
+
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>08h - 20h</td>
+
+        </tr>
+      </tbody>
+        
+
+   </table>
+</main>
+
+<footer>
+<img src="./img/logo-blanco.png" alt="imagen no disponible">
+<p class="copyright">&copy Copyright Jordan inc - 2022</p>
+</footer>
+</body>
+</html>

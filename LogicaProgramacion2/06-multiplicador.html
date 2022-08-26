@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplicador</title>
+</head>
+<body>
+    <script>
+        function saltarLinea() {
+            document.write("<br><br>");
+            }
+
+        function imprimir(frase) {
+            document.write(frase);
+                saltarLinea();
+            }
+
+        var multiplicador =0;
+
+        var tablas = parseInt(prompt("Ingrese el numero de la tabla que desea multiplicar"));
+        imprimir("los resultados de la tabla son")
+        if (tablas >=1 && tablas <=100)       
+//Aqui usaremos el metodo fOR
+            for(var multiplicador =0; multiplicador <= 10; multiplicador++){
+                imprimir(tablas * multiplicador);
+                }
+
+//aqui usamos el metodo WHILE
+        
+        while(multiplicador <=10){
+            imprimir(5*multiplicador)
+            multiplicador++
+        
+        }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+function saltarlinea (){
+    document.write("<br><br>");
+}
+
+function imprimir (frase,anho,fechanacimiento){
+    document.write(frase+" tiene " +(anho-fechanacimiento)+ " años" ); //funcion para imprimir texto
+    saltarlinea();
+}
+
+    var anho=2022;
+
+//Este código permite calcular la edad de Carlos, Juan y Pedro.
+
+    document.write("Hola amigos");
+    saltarlinea();
+    imprimir("Juan",anho,1996);
+    imprimir ("Carlos",anho,1998);
+    imprimir ("Pedro",anho,1986);
+
+</script>
+<Script>
+    
+    pesoJordan = 70
+    alturaJordan = 1.75
+    pesoFelipe = 110
+    alturaFelipe = 1.80
+
+    function  saltarLinea () {
+        document.write("<br><br>");
+    }
+
+    function imprimir (input){
+        document.write(input);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura){
+        imc = peso / (altura**2)// puedes usar altura como remplazo 
+        return Math.round(imc);
+    }
+
+    imcJordan = calcularImc(pesoJordan,alturaJordan)
+    imprimir('El IMC de jordan es: ' + imcJordan)
+
+    imcFelipe= calcularImc(pesoFelipe,alturaFelipe)
+    imprimir('El IMC de jordan es: ' + imcFelipe)
+    
+</Script>
+<script>
+    // otra forma de hacerlo mejor es 
+
+    function  saltarLinea () {
+        document.write("<br><br>");
+    }
+
+    function imprimir (input){
+        document.write(input);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura, nombre){
+        imc = peso / (altura*altura)// puedes usar altura como remplazo 
+        imprimir("el IMC calculado de " + nombre + " es " + (imc));
+    }
+
+    calcularImc(70,1.75,"Jordan");
+    calcularImc(110,1.80,"Felipe");
+
+</script>

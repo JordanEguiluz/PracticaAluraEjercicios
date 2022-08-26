@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Logica parte 3</title>
+</head>
+<body>
+    <canvas style=" margin:5px, 0; "  width="600" height="400">
+
+    </canvas>
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        function dibujarCuadrado(x,y,color){
+            pincel.fillStyle= color //esta es una propiedad
+            pincel.fillRect(x,y,50,50);//esta es una funcion
+            pincel.strokeStyle="black"
+            pincel.strokeRect(x,y,50,50);
+
+        }
+
+
+        dibujarCuadrado(0,0,"red")
+        dibujarCuadrado(50,0,"yellow")
+        dibujarCuadrado(100,0,"green")
+
+
+    </script>
+</body>
+</html>

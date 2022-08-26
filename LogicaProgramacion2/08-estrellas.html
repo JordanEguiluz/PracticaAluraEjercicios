@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function  saltarLinea () {
+        document.write("<br><br>");
+    }
+
+    function imprimir (argument){
+        document.write(argument);
+        saltarLinea();
+    }
+    for (var lineas = 0; lineas <=5; lineas++){
+        for(var columnas = 0; columnas <=10; columnas++)
+        {
+            document.write("*")
+        }
+
+        saltarLinea();
+
+    }
+    imprimir("fin")
+
+    </script>
+</body>
+</html>

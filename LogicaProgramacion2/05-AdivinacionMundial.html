@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Año Mundial fifa</title>
+</head>
+<body>
+    <h1>Año Mundial Fifa</h1>
+
+    <script>
+        function saltarLinea() {
+            document.write("<br><br>");
+    }
+
+        function imprimir(frase) {
+            document.write(frase);
+                saltarLinea();
+    }
+    var añoMundial = 1930;
+    limite = parseInt(prompt("Ingrese el año para ver los mundiales hasta la fecha"))
+    while (añoMundial <= limite){
+        
+    imprimir("hubo mundial de la fifa en el año: " + añoMundial)
+    añoMundial =añoMundial + 4;
+
+    }
+
+    for(añoMundial = 1930; añoMundial<=limite; añoMundial =añoMundial+4){
+        imprimir("hubo mundial de la fifa en el año: " + añoMundial)
+    
+    }
+
+    imprimir("fin")
+
+
+
+
+    </script>
+</body>
+</html>
